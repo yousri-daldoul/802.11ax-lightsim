@@ -99,7 +99,7 @@ the throughput of legacy full bandwidth transmissions (i.e. pure EDCA), "UL OFDM
 as a function of the number of of RA RUs.
 It is used to build Figure 9 of the paper
 */
-void throughputComparison1() {
+void ulThroughputComparison1() {
 	struct wlan_result result;
 	
 	printf("Throughput of EDCA, UL OFDMA with EDCA, and pure UL OFDMA (max A-MPDU length = 10 MPDUs):\n");
@@ -642,7 +642,7 @@ int main(int argc, char** argv) {
 	printf("\n");
 	pureOfdmaDelays();
 	printf("\n");
-	throughputComparison1();
+	ulThroughputComparison1();
 	printf("\n");
 	ulThroughputComparison2();
 	printf("\n");
